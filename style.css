@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #EFEFEF;
+}
+
+header {
+  background-color: #2B2B2B;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  color: #909090;
+}
+
+button {
+  background-color: #2b2b2b;
+  color: #fff;
+  font-size: 80%;
+  height: 25px;
+  /*width: 7.5rem;*/
+  margin: 5px;
+}
+
+.enter {
+  background-color: #2b2b2b;
+  color: #fff;
+  font-size: 60%;
+  height: 15px;
+  width: 5rem;
+  margin: 5px;
+}
+
+.nav {
+  /*margin-left: -10px;*/
+  border: none;
+  margin-right: 20px
+}
+
+.nav-share {
+  /*margin-right: -20px;*/
+}
+
+.nav-buttons {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.username {
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+input {
+  margin: 5px;
+  align-self: flex-end;
+}
+
+.cars {
+  /*float: right;*/
+  margin-top: -25px;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 3rem;
+  align-self: flex-end;
+}
+
+.fa-share {
+  float: right;
+  font-size: 31px;
+  margin-top: -50px;
+  margin-right: 7px;
+}
+
+main {
+  display: grid;
+  width: 95%;
+  margin: 10px auto;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-auto-flow: dense;
+  grid-gap: 15px;
+}
+
+section {
+  display: flex;
+  background-color: #fff;
+  height: 17rem;
+  width: 14rem;
+  flex-direction: column;
+  word-break: break-all;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+
+.picture {
+  background-image: url(pics/nighttimecar.jpg);
+  background-size: cover;
+  width: 14rem;
+  height: 8rem;
+  display: block;
+  color: #fff;
+}
+
+.info {
+  display: block;
+  justify-content: center;
+}
+
+.date {
+  font-size: 8px;
+  opacity: .7;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.url {
+  width: 12rem;
+  background-color: #EFEFEF;
+  opacity: .7;
+  margin-left: 5px;
+  font-size: .76rem;
+  padding: 3px;
+  /*text-align: center;*/
+  /*margin-left: 22px;*/
+}
+
+.model {
+  color: #63BCF7;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  margin-top: -5px;
+}
+
+.porsche {
+  color: #63BCF7;
+}
+
+h2 {
+  font-size: 1.0em;
+  margin: 5px;
+}
+
+h3 {
+  font-size: .8em;
+  margin: 5px;
+}
+
+.picture h2, .picture h1 {
+  margin: 2px;
+  margin-left: 7px;
+}
+
+@media(max-width: 640px){
+
+  body {
+    text-align: center;
+  }
+
+  header {
+    height: 10rem;
+  }
+
+  .cars {
+    align-self: center;
+    margin-top: 0px;
+  }
+
+  .url {
+    text-align: center;
+  }
+
+  section {
+    margin: auto;
+  }
+
+  .enter {
+    display: none;
+  }
+  
+  button {
+    /*display: none;*/
+  }
+
+  input {
+    display: none;
+  }
+
+
+
